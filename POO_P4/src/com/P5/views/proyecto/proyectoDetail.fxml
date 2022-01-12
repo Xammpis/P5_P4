@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="500.0" prefWidth="500.0" vgap="10"
+          xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.P5.controllers.proyectos.ProyectoDetailController">
+    <columnConstraints>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+    </rowConstraints>
+    <children>
+        <ScrollPane hbarPolicy="NEVER" prefHeight="653.0" prefWidth="500.0">
+            <content>
+                <Pane prefHeight="636.0" prefWidth="500.0">
+                    <padding>
+                        <Insets bottom="16.0" left="16.0" right="16.0" top="16.0"/>
+                    </padding>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="211.0" layoutY="16.0" text="Proyecto"
+                               textAlignment="CENTER" wrapText="true">
+                            <font>
+                                <Font size="20.0"/>
+                            </font>
+                            <opaqueInsets>
+                                <Insets/>
+                            </opaqueInsets>
+                        </Label>
+                        <Button fx:id="proyectoLayoutBtn" layoutX="14.0" layoutY="18.0" mnemonicParsing="false"
+                                onAction="#goToProyectoLayout" text="Atrás"/>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="14.0" layoutY="60.0"
+                               prefHeight="20.0" prefWidth="155.0" text="Nombre">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="nombreLabel" contentDisplay="CENTER" layoutX="183.0" layoutY="60.0"
+                               prefHeight="20.0" prefWidth="303.0" text="NombreLabel">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="14.0" layoutY="90.0"
+                               prefHeight="20.0" prefWidth="155.0" text="País">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="paisLabel" contentDisplay="CENTER" layoutX="183.0" layoutY="90.0"
+                               prefHeight="20.0" prefWidth="303.0" text="PaísLabel">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="14.0" layoutY="120.0"
+                               prefHeight="20.0" prefWidth="155.0" text="Localización">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="localizacionLabel" contentDisplay="CENTER" layoutX="183.0" layoutY="120.0"
+                               prefHeight="20.0" prefWidth="303.0" text="LocalizaciónLabel">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="14.0" layoutY="150.0"
+                               prefHeight="20.0" prefWidth="155.0" text="Línea de Acción">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="lineaAccionLabel" contentDisplay="CENTER" layoutX="183.0" layoutY="150.0"
+                               prefHeight="20.0" prefWidth="303.0" text="LíneaAcciónLabel">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="14.0" layoutY="180.0"
+                               prefHeight="20.0" prefWidth="155.0" text="Sublínea de Acción" textAlignment="RIGHT">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="sublineaAccionLabel" contentDisplay="CENTER" layoutX="183.0" layoutY="180.0"
+                               prefHeight="20.0" prefWidth="303.0" text="SublíneaAcciónLabel" textAlignment="RIGHT">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="14.0" layoutY="210.0"
+                               prefHeight="20.0" prefWidth="155.0" text="Fecha de Inicio">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="fechaInicioLabel" contentDisplay="CENTER" layoutX="183.0" layoutY="210.0"
+                               prefHeight="20.0" prefWidth="303.0" text="FechaInicioLabel" textAlignment="CENTER">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="14.0" layoutY="240.0"
+                               prefHeight="20.0" prefWidth="155.0" text="Fecha de Fin">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="fechaFinLabel" contentDisplay="CENTER" layoutX="183.0" layoutY="240.0"
+                               prefHeight="20.0" prefWidth="303.0" text="FechaFinLabel" textAlignment="CENTER">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="14.0" layoutY="270.0"
+                               prefHeight="20.0" prefWidth="155.0" text="Socio Local">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="socioLocalLabel" contentDisplay="CENTER" layoutX="183.0" layoutY="270.0"
+                               prefHeight="20.0" prefWidth="303.0" text="SocioLocalLabel" textAlignment="CENTER">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="14.0" layoutY="300.0"
+                               prefHeight="20.0" prefWidth="155.0" text="Financiador">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="financiadorLabel" contentDisplay="CENTER" layoutX="183.0" layoutY="300.0"
+                               prefHeight="20.0" prefWidth="303.0" text="FinanciadorLabel" textAlignment="CENTER">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="14.0" layoutY="330.0"
+                               prefHeight="20.0" prefWidth="155.0" text="Financiación Aportada">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="financiacionAportadaLabel" contentDisplay="CENTER" layoutX="183.0" layoutY="330.0"
+                               prefHeight="20.0" prefWidth="303.0" text="FinanciaciónAportadaLabel"
+                               textAlignment="CENTER">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </Label>
+                        <TitledPane layoutX="24.0" layoutY="365.0" prefHeight="200.0" prefWidth="452.0"
+                                    text="Personal Asociado">
+                            <content>
+                                <TableView fx:id="personalTablePanel" prefHeight="201.0" prefWidth="476.0"/>
+                            </content>
+                        </TitledPane>
+                        <Button fx:id="editBtn" layoutX="36.0" layoutY="578.0" mnemonicParsing="false"
+                                onAction="#goToEditProyectoForm" prefHeight="48.0" prefWidth="210.0" text="Editar"/>
+                        <Button fx:id="deleteBtn" layoutX="266.0" layoutY="578.0" mnemonicParsing="false"
+                                onAction="#deleteProyecto" prefHeight="48.0" prefWidth="210.0" text="Eliminar"/>
+                    </children>
+                </Pane>
+            </content>
+        </ScrollPane>
+    </children>
+</GridPane>

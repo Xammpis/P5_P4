@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="500.0" prefWidth="500.0" vgap="10"
+          xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.P5.controllers.proyectos.ProyectoFormController">
+    <columnConstraints>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+    </rowConstraints>
+    <children>
+        <ScrollPane hbarPolicy="NEVER" prefHeight="683.0" prefWidth="500.0">
+            <content>
+                <Pane prefHeight="713.0" prefWidth="500.0">
+                    <padding>
+                        <Insets bottom="16.0" left="16.0" right="16.0" top="16.0"/>
+                    </padding>
+                    <children>
+                        <Label fx:id="formTitle" alignment="CENTER" contentDisplay="CENTER" layoutX="178.0"
+                               layoutY="28.0" text="Nuevo Proyecto" textAlignment="CENTER" wrapText="true">
+                            <font>
+                                <Font size="20.0"/>
+                            </font>
+                            <opaqueInsets>
+                                <Insets/>
+                            </opaqueInsets>
+                        </Label>
+                        <Button fx:id="proyectoLayoutBtn" layoutX="14.0" layoutY="18.0" mnemonicParsing="false"
+                                onAction="#goToProyectoLayout" text="Atrás"/>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="16.0" layoutY="80.0"
+                               prefHeight="20.0" prefWidth="154.0" text="Nombre">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="nombreField" layoutX="178.0" layoutY="78.0" prefHeight="25.0"
+                                   prefWidth="285.0"/>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="16.0" layoutY="110.0"
+                               prefHeight="20.0" prefWidth="154.0" text="País">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="paisField" layoutX="178.0" layoutY="108.0" prefHeight="25.0"
+                                   prefWidth="285.0"/>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="16.0" layoutY="140.0"
+                               prefHeight="20.0" prefWidth="154.0" text="Localización">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="localizacionField" layoutX="178.0" layoutY="138.0" prefHeight="25.0"
+                                   prefWidth="285.0"/>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="16.0" layoutY="170.0"
+                               prefHeight="20.0" prefWidth="154.0" text="Línea de Acción" textAlignment="RIGHT">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="lineaAccionField" layoutX="178.0" layoutY="168.0" prefHeight="25.0"
+                                   prefWidth="285.0"/>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="16.0" layoutY="200.0"
+                               prefHeight="20.0" prefWidth="154.0" text="Sublínea de Acción" textAlignment="RIGHT"
+                               textOverrun="LEADING_ELLIPSIS">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="subLineaAccionField" layoutX="178.0" layoutY="198.0" prefHeight="25.0"
+                                   prefWidth="285.0"/>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="16.0" layoutY="230.0"
+                               prefHeight="20.0" prefWidth="154.0" text="Fecha de Inicio" textAlignment="RIGHT">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <DatePicker fx:id="fechaInicioField" layoutX="178.0" layoutY="228.0" prefHeight="25.0"
+                                    prefWidth="285.0"/>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="16.0" layoutY="260.0"
+                               prefHeight="20.0" prefWidth="154.0" text="Fecha de Fin" textAlignment="RIGHT">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <DatePicker fx:id="fechaFinField" layoutX="178.0" layoutY="258.0" prefHeight="25.0"
+                                    prefWidth="285.0"/>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="16.0" layoutY="290.0"
+                               prefHeight="20.0" prefWidth="154.0" text="Socio Local" textAlignment="RIGHT">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="socioLocalField" layoutX="178.0" layoutY="288.0" prefHeight="25.0"
+                                   prefWidth="285.0"/>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="16.0" layoutY="320.0"
+                               prefHeight="20.0" prefWidth="154.0" text="Financiador" textAlignment="RIGHT">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="financiadorField" layoutX="178.0" layoutY="318.0" prefHeight="25.0"
+                                   prefWidth="285.0"/>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="16.0" layoutY="350.0"
+                               prefHeight="20.0" prefWidth="154.0" text="Financiación Aportada" textAlignment="RIGHT">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="financiacionAportadaField" layoutX="178.0" layoutY="348.0" prefHeight="25.0"
+                                   prefWidth="285.0"/>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="16.0" layoutY="380.0"
+                               prefHeight="20.0" prefWidth="154.0" text="Delegación" textAlignment="RIGHT">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <ChoiceBox fx:id="selectDelegacionField" layoutX="178.0" layoutY="378.0" prefHeight="25.0"
+                                   prefWidth="285.0"/>
+                        <TitledPane layoutX="16.0" layoutY="414.0" prefHeight="206.0" prefWidth="447.0"
+                                    text="Personal Asociado al Proyecto">
+                            <content>
+                                <ListView fx:id="personalAsociadoList" prefHeight="200.0" prefWidth="200.0"/>
+                            </content>
+                        </TitledPane>
+                        <Button fx:id="saveBtn" layoutX="40.0" layoutY="644.0" mnemonicParsing="false"
+                                onAction="#addNewProyecto" prefHeight="45.0" prefWidth="399.0" text="Guardar"/>
+                    </children>
+                </Pane>
+            </content>
+        </ScrollPane>
+    </children>
+</GridPane>

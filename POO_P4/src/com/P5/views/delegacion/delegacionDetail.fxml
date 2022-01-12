@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.*?>
+<GridPane alignment="center" hgap="10" prefHeight="500.0" prefWidth="500.0" vgap="10"
+          xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.P5.controllers.delegacion.DelegacionDetailController">
+    <columnConstraints>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="500.0" prefWidth="500.0">
+            <padding>
+                <Insets bottom="16.0" left="16.0" right="16.0" top="16.0"/>
+            </padding>
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="201.0" layoutY="30.0" text="Delegación"
+                       textAlignment="CENTER" wrapText="true">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                    <opaqueInsets>
+                        <Insets/>
+                    </opaqueInsets>
+                </Label>
+                <Button fx:id="delegacionLayoutBtn" layoutX="14.0" layoutY="18.0" mnemonicParsing="false"
+                        onAction="#goToDelegacionLayout" text="Atrás"/>
+                <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="50.0" layoutY="71.0" prefHeight="20.0"
+                       prefWidth="73.0" text="ID">
+                    <font>
+                        <Font name="System Bold" size="14.0"/>
+                    </font>
+                </Label>
+                <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="50.0" layoutY="101.0" prefHeight="20.0"
+                       prefWidth="73.0" text="Dirección">
+                    <font>
+                        <Font name="System Bold" size="14.0"/>
+                    </font>
+                </Label>
+                <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="50.0" layoutY="131.0" prefHeight="20.0"
+                       prefWidth="73.0" text="Ciudad">
+                    <font>
+                        <Font name="System Bold" size="14.0"/>
+                    </font>
+                </Label>
+                <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="50.0" layoutY="161.0" prefHeight="20.0"
+                       prefWidth="73.0" text="Email">
+                    <font>
+                        <Font name="System Bold" size="14.0"/>
+                    </font>
+                </Label>
+                <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="50.0" layoutY="191.0" prefHeight="20.0"
+                       prefWidth="73.0" text="Teléfono" textAlignment="RIGHT">
+                    <font>
+                        <Font name="System Bold" size="14.0"/>
+                    </font>
+                </Label>
+                <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="50.0" layoutY="221.0" prefHeight="20.0"
+                       prefWidth="73.0" text="Central">
+                    <font>
+                        <Font name="System Bold" size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="idLabel" contentDisplay="CENTER" layoutX="150.0" layoutY="71.0" prefHeight="20.0"
+                       prefWidth="312.0" text="IDLabel">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="direccionLabel" contentDisplay="CENTER" layoutX="150.0" layoutY="101.0" prefHeight="20.0"
+                       prefWidth="312.0" text="DirecciónLabel">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="ciudadLabel" contentDisplay="CENTER" layoutX="150.0" layoutY="131.0" prefHeight="20.0"
+                       prefWidth="312.0" text="CiudadLabel">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="emailLabel" contentDisplay="CENTER" layoutX="150.0" layoutY="161.0" prefHeight="20.0"
+                       prefWidth="312.0" text="EmailLabel">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="telefonoLabel" contentDisplay="CENTER" layoutX="150.0" layoutY="191.0" prefHeight="20.0"
+                       prefWidth="312.0" text="TeléfonoLabel" textAlignment="RIGHT">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="centralLabel" contentDisplay="CENTER" layoutX="150.0" layoutY="221.0" prefHeight="20.0"
+                       prefWidth="312.0" text="CentralLabel" textAlignment="CENTER">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+                <Button fx:id="editBtn" layoutX="36.0" layoutY="431.0" mnemonicParsing="false"
+                        onAction="#goToEditDelegacionForm" prefHeight="48.0" prefWidth="210.0" text="Editar"/>
+                <Button fx:id="deleteBtn" layoutX="266.0" layoutY="431.0" mnemonicParsing="false"
+                        onAction="#deleteDelegacion" prefHeight="48.0" prefWidth="210.0" text="Eliminar"/>
+                <Accordion layoutX="36.0" layoutY="250.0" prefHeight="169.0" prefWidth="442.0">
+                    <panes>
+                        <TitledPane animated="false" prefHeight="132.0" prefWidth="442.0" text="Proyectos">
+                            <content>
+                                <TableView fx:id="proyectosTablePanel" prefHeight="121.0" prefWidth="440.0"/>
+                            </content>
+                        </TitledPane>
+                        <TitledPane animated="false" prefHeight="132.0" prefWidth="442.0" text="Personal">
+                            <content>
+                                <TableView fx:id="personalTablePanel" prefHeight="121.0" prefWidth="440.0"/>
+                            </content>
+                        </TitledPane>
+                    </panes>
+                </Accordion>
+            </children>
+        </Pane>
+    </children>
+</GridPane>
