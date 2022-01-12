@@ -1,4 +1,4 @@
-# POOandSQLP5
+# Producto 5
 Programación orientada a objetos con acceso a base de datos, 
 
 Descripción
